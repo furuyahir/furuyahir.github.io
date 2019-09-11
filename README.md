@@ -1,2 +1,2 @@
-# furuyahir.github.io
-Hiroshi Furuya's website hfuruya.com
+# Hiroshi Furuya's website
+Source code for [hfuruya.com](https://hfuruya.com)
