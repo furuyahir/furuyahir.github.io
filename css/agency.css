@@ -126,12 +126,12 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  color: #5a5a5a;
+  color: #c8c8c8;
   font-family: 'Bad Script', sans-serif;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #428BCA;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -267,7 +267,7 @@ header.masthead .intro-text .intro-heading {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: #428BCAaa;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover,
@@ -745,10 +745,10 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     color: #777;
 }
 .bs-callout-primary {
-    border-left-color: #428bca;
+    border-left-color: #428BCA;
 }
 .bs-callout-primary h4 {
-    color: #428bca;
+    color: #428BCA; /* 428BCA */
 }
 .bs-callout-success {
     border-left-color: #5cb85c;
