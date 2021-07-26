@@ -24,18 +24,18 @@
   	var d = new Date();
   	var s = 2; //d.getDay();
 
-    iframeurl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRHibxZNpsIT5Wjb9yXrOC3Wihyphfbq4gffVNss8aKwxUk98DbvN7p4YDhStbSjFalPqxbf-iVzntw/pubhtml?widget=false&amp;headers=false&amp;single=true";
+    iframeurl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRHibxZNpsIT5Wjb9yXrOC3Wihyphfbq4gffVNss8aKwxUk98DbvN7p4YDhStbSjFalPqxbf-iVzntw/pubhtml?widget=false&headers=false";
     var gid="";
 
     var pagetitle = "Workout Plan"
     switch(s) {
     	case 0:
-    	case 1: gid="#gid=0"; pagetitle +=" - Monday"; break;
-    	case 2: gid="#gid=1533107418"; pagetitle +=" - Tuesday"; break;
-    	case 3: gid="#gid=348482044"; pagetitle +=" - Wednesday"; break;
-    	case 4: gid="#gid=1616254559"; pagetitle +=" - Thursday"; break;
-    	case 5: gid="#gid=573319341"; pagetitle +=" - Friday"; break;
-    	case 6: gid="#gid=813941477"; pagetitle +=" - Saturday"; break;
+    	case 1: gid="&gid=0"; pagetitle +=" - Monday"; break;
+    	case 2: gid="&gid=1533107418"; pagetitle +=" - Tuesday"; break;
+    	case 3: gid="&gid=348482044"; pagetitle +=" - Wednesday"; break;
+    	case 4: gid="&gid=1616254559"; pagetitle +=" - Thursday"; break;
+    	case 5: gid="&gid=573319341"; pagetitle +=" - Friday"; break;
+    	case 6: gid="&gid=813941477"; pagetitle +=" - Saturday"; break;
     	default: gid="";
     }
 
