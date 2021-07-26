@@ -28,21 +28,19 @@
     iframeurl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRHibxZNpsIT5Wjb9yXrOC3Wihyphfbq4gffVNss8aKwxUk98DbvN7p4YDhStbSjFalPqxbf-iVzntw/pubhtml?widget=false";
     var gid="";
 
-    var pagetitle = "Workout Plan"
     switch(s) {
     	case 0:
-    	case 1: gid="&gid=0"; pagetitle +=" - Monday"; break;
-    	case 2: gid="&gid=1533107418"; pagetitle +=" - Tuesday"; break;
-    	case 3: gid="&gid=348482044"; pagetitle +=" - Wednesday"; break;
-    	case 4: gid="&gid=1616254559"; pagetitle +=" - Thursday"; break;
-    	case 5: gid="&gid=573319341"; pagetitle +=" - Friday"; break;
-    	case 6: gid="&gid=813941477"; pagetitle +=" - Saturday"; break;
+    	case 1: gid="&gid=0"; break;
+    	case 2: gid="&gid=1533107418"; break;
+    	case 3: gid="&gid=348482044"; break;
+    	case 4: gid="&gid=1616254559"; break;
+    	case 5: gid="&gid=573319341"; break;
+    	case 6: gid="&gid=813941477"; break;
     	default: gid="";
     }
 
     var fullPath = iframeurl + gid;
     document.getElementById('myFrame').setAttribute("src",fullPath);
-    document.title = pagetitle;
     });
   </script>
 
