@@ -34,7 +34,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">HFuruya
-        <!-- <img src="img/icon.png"/ width=60 height=60> --></a>
+        <!-- <img src="img/icon.png"/ width=60 height=60> -->
+      </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -64,27 +65,27 @@
 
           <li class="nav-item">
             <script type="text/javascript" language="javascript">
-                // Email obfuscator script 2.1 by Tim Williams, University of Arizona
-                // Random encryption key feature coded by Andrew Moulden
-                // This code is freeware provided these four comment lines remain intact
-                // A wizard to generate this code is at http://www.jottings.com/obfuscator/
-                {
-                  coded = "KTDHUKT@KQLDLh9.vHW"
-  key = "R1FYGkMyCIe4jbi6JarA5Ofg27hPwXmdqTZo9Ds0uQc8zKBxVWpnltHENU3LSv"
-  shift=coded.length
-  link=""
-  for(i = 0; i<coded.length; i++) {
-                if (key.indexOf(coded.charAt(i)) == -1) {
-                  ltr = coded.charAt(i)
-                  link += (ltr)
+              // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+              // Random encryption key feature coded by Andrew Moulden
+              // This code is freeware provided these four comment lines remain intact
+              // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+              {
+                coded = "KTDHUKT@KQLDLh9.vHW"
+                key = "R1FYGkMyCIe4jbi6JarA5Ofg27hPwXmdqTZo9Ds0uQc8zKBxVWpnltHENU3LSv"
+                shift = coded.length
+                link = ""
+                for (i = 0; i < coded.length; i++) {
+                  if (key.indexOf(coded.charAt(i)) == -1) {
+                    ltr = coded.charAt(i)
+                    link += (ltr)
+                  }
+                  else {
+                    ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length
+                    link += (key.charAt(ltr))
+                  }
                 }
-                else {
-                  ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length
-                  link += (key.charAt(ltr))
-                }
+                document.write("<a class='nav-link js-scroll-trigger' href='mailto:" + link + "'>" + "<i class='fa fa-envelope'></i>" + "</a>")
               }
-              document.write("<a class='nav-link js-scroll-trigger' href='mailto:" + link + "'>" + "<i class='fa fa-envelope'></i>" + "</a>")
-}
 //-->
             </script><noscript>Sorry, you need Javascript on to email me.</noscript>
 
@@ -187,9 +188,15 @@
         <div class="col-lg-2"></div>
         <div class="col-lg-8 text-center" style="">
           <h2 class="section-heading" style="color:#fff">FEATURED</h2>
-          <h4 style="font-weight:400; font-family: 'Droid Serif', serif; font-style:italic; padding-bottom: 30px; color:#a9a9a9">Navy Training Simulator</h4>
+          <h4
+            style="font-weight:400; font-family: 'Droid Serif', serif; font-style:italic; padding-bottom: 30px; color:#a9a9a9">
+            Navy Training Simulator</h4>
           <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
-          <div style="height: 0; padding-bottom: calc(56.25%); position:relative; width: 100%;"><iframe allow="autoplay; gyroscope;" allowfullscreen height="100%" referrerpolicy="strict-origin" src="https://www.kapwing.com/e/611d77a20fdfa7008aefb059" style="border:0; height:100%; left:0; overflow:hidden; position:absolute; top:0; width:100%" title="Embedded content made on Kapwing" width="100%"></iframe></div>
+          <div style="height: 0; padding-bottom: calc(56.25%); position:relative; width: 100%;"><iframe
+              allow="autoplay; gyroscope;" allowfullscreen height="100%" referrerpolicy="strict-origin"
+              src="https://www.kapwing.com/e/611d77a20fdfa7008aefb059"
+              style="border:0; height:100%; left:0; overflow:hidden; position:absolute; top:0; width:100%"
+              title="Embedded content made on Kapwing" width="100%"></iframe></div>
           <!-- <iframe width="500" height="400" src="//www.youtube.com/embed/0oWM342IyKg?rel=0?html5=1?vq=hd720?modestbranding=1?controls=0" frameborder="0" allowfullscreen></iframe> -->
         </div>
       </div>
@@ -197,7 +204,7 @@
 
       <div class="row">
 
-        
+
 
         <!-- <iframe id='paper'
           src="https://docs.google.com/gview?url=https://iafastro.directory/iac/paper/id/45436/abstract-pdf/IAC-18,B3,7,6,x45436.brief.pdf&embedded=true"
@@ -211,7 +218,10 @@
       </div>
       <div class="row">
         <div class="col-lg-12 text-center">
-          <p style="padding-top: 20px; color:#fff">Sailors aboard aircraft carriers all over the world use the I-STALKER to provide command with video and range information on targets in visual range. Watch to see how the X-Force Summer 2021 Fellows have created a virtual simulator to help sailors train on this important ship capability.</p>
+          <p style="padding-top: 20px; color:#fff">Sailors aboard aircraft carriers all over the world use the I-STALKER
+            to provide command with video and range information on targets in visual range. Watch to see how the X-Force
+            Summer 2021 Fellows have created a virtual simulator to help sailors train on this important ship
+            capability.</p>
         </div>
       </div>
 
@@ -219,7 +229,7 @@
     </div>
   </section>
 
-  
+
 
   <section class="page-section" id="conferences">
     <div class="row" style="padding-bottom:20px" width=100%>
@@ -260,14 +270,17 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">FEATURED</h2>
-          <h4 style="font-weight:400; font-family: 'Droid Serif', serif; font-style:italic; padding-bottom: 30px; color:#fff"
+          <h4
+            style="font-weight:400; font-family: 'Droid Serif', serif; font-style:italic; padding-bottom: 30px; color:#fff"
             class="text-muted">Conference Abstract: Augmented Reality for NASA Space Stowage Operations</h4>
           <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
         </div>
       </div>
       <div class="row">
 
-        <iframe frameborder="0" src="https://docs.google.com/viewer?srcid=1dd3x5pxIRdAJuSJrTsdUzbROFiPky61E&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="300px"></iframe>
+        <iframe frameborder="0"
+          src="https://docs.google.com/viewer?srcid=1dd3x5pxIRdAJuSJrTsdUzbROFiPky61E&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
+          width="100%" height="300px"></iframe>
 
         <!-- <iframe id='paper'
           src="https://docs.google.com/gview?url=https://iafastro.directory/iac/paper/id/45436/abstract-pdf/IAC-18,B3,7,6,x45436.brief.pdf&embedded=true"
@@ -289,7 +302,7 @@
 
     </div>
   </section>
-  
+
   <!-- Services -->
   <section class="page-section" id="services">
     <div class="row">
@@ -366,27 +379,27 @@
               For additional information, email me at: <b>
 
                 <script type="text/javascript" language="javascript">
-                    // Email obfuscator script 2.1 by Tim Williams, University of Arizona
-                    // Random encryption key feature coded by Andrew Moulden
-                    // This code is freeware provided these four comment lines remain intact
-                    // A wizard to generate this code is at http://www.jottings.com/obfuscator/
-                    {
-                      coded = "Us3DdUs@UKQ3Q8X.RDY"
-  key = "1N4pPRdA0k7FebXm8IT2uCorLnWOVJiEhjYztflQ9D3MxwqHcsgUvZ6BKaGyS5"
-  shift=coded.length
-  link=""
-  for(i = 0; i<coded.length; i++) {
-                    if (key.indexOf(coded.charAt(i)) == -1) {
-                      ltr = coded.charAt(i)
-                      link += (ltr)
+                  // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+                  // Random encryption key feature coded by Andrew Moulden
+                  // This code is freeware provided these four comment lines remain intact
+                  // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+                  {
+                    coded = "Us3DdUs@UKQ3Q8X.RDY"
+                    key = "1N4pPRdA0k7FebXm8IT2uCorLnWOVJiEhjYztflQ9D3MxwqHcsgUvZ6BKaGyS5"
+                    shift = coded.length
+                    link = ""
+                    for (i = 0; i < coded.length; i++) {
+                      if (key.indexOf(coded.charAt(i)) == -1) {
+                        ltr = coded.charAt(i)
+                        link += (ltr)
+                      }
+                      else {
+                        ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length
+                        link += (key.charAt(ltr))
+                      }
                     }
-                    else {
-                      ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length
-                      link += (key.charAt(ltr))
-                    }
+                    document.write("<a href='mailto:" + link + "'>" + link + "</a>")
                   }
-                  document.write("<a href='mailto:" + link + "'>" + link + "</a>")
-}
 //-->
                 </script><noscript>Sorry, you need Javascript on to email me.</noscript>
 
@@ -415,7 +428,10 @@
 
         <!-- <iframe src="pdf/HiroshiFuruyaResume.pdf" width="100%" height="1152px" frameborder="0"></iframe> -->
 
-        <iframe frameborder="0" src="https://docs.google.com/viewer?srcid=1Ju0AcEaJ_OM3kOw-nl0DdF-wS8M2pLqu&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="1010px"></iframe>
+        <!-- <iframe frameborder="0" src="https://docs.google.com/viewer?srcid=1Ju0AcEaJ_OM3kOw-nl0DdF-wS8M2pLqu&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="1010px"></iframe> -->
+        <iframe frameborder="0"
+          src="https://docs.google.com/document/d/e/2PACX-1vSLkc86K7iJSlH-3vjMLDFsOjZhd-6O_b83PFJhxh5txcDiXNMYTdQfayNEarCdcxt5ICKylekCrq5d/pub?embedded=true"
+          width="100%" height="1010px"></iframe>
 
         <!-- <iframe id='cv'
           src="https://docs.google.com/gview?url=https://hfuruya.com/pdf/HiroshiFuruyaResume.pdf&embedded=true"
@@ -446,7 +462,8 @@
           <span class="copyright" style="color:#888;">Copyright &copy; Hiroshi Furuya
             <script type="text/javascript">
               document.write(new Date().getFullYear());
-            </script></span>
+            </script>
+          </span>
         </div>
       </div>
     </div>
