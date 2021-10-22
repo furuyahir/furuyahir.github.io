@@ -39,4 +39,53 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  ////////////////////// Added by me for iframes
+
+  // The code will keep loading the url into iframe until the doc loads successfully.
+
+    var URL = "https://docs.google.com/viewer?srcid=1dd3x5pxIRdAJuSJrTsdUzbROFiPky61E&pid=explorer&efh=false&a=v&chrome=false&embedded=true";
+    var count = 0;
+        var iframe = ` <iframe id = "myIframe" src = "${URL}" width="100%" height="300px" frameborder = "0"></iframe>`;
+            
+       $(`#iframeContainer`).html(iframe);
+            $('#myIframe').on('load', function(){ 
+            count++;
+            if(count>0){
+                clearInterval(ref)
+            }
+        });
+
+        var ref = setInterval(()=>{
+        $(`#iframeContainer`).html(iframe);
+        $('#myIframe').on('load', function() {
+            count++;
+            if (count > 0) {
+                clearInterval(ref)
+            }
+        });
+    }, 4000)
+
+    // The code will keep loading the url into iframe until the doc loads successfully.
+    
+    var URL2 = "https://docs.google.com/viewer?srcid=1Ju0AcEaJ_OM3kOw-nl0DdF-wS8M2pLqu&pid=explorer&efh=false&a=v&chrome=false&embedded=true";
+    var count2 = 0;
+        var iframe2 = ` <iframe id = "myIframe2" src = "${URL2}" width="100%" height="1010px" frameborder = "0"></iframe>`;
+            
+       $(`#iframeContainer2`).html(iframe2);
+            $('#myIframe2').on('load', function(){ 
+            count2++;
+            if(count2>0){
+                clearInterval(ref2)
+            }
+        });
+
+        var ref2 = setInterval(()=>{
+        $(`#iframeContainer2`).html(iframe2);
+        $('#myIframe2').on('load', function() {
+            count2++;
+            if (count2 > 0) {
+                clearInterval(ref2)
+            }
+        });
+    }, 4000)
 })(jQuery); // End of use strict
