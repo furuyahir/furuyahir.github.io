@@ -63,7 +63,7 @@
                 clearInterval(ref)
             }
         });
-    }, 4000)
+    }, 6000)
 
     // The code will keep loading the url into iframe until the doc loads successfully.
     
@@ -87,5 +87,5 @@
                 clearInterval(ref2)
             }
         });
-    }, 4000)
+    }, 6000)
 })(jQuery); // End of use strict
