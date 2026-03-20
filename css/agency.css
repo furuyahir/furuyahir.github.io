@@ -248,6 +248,9 @@ header.masthead .intro-text .intro-heading {
 #conferences .portfolio-item {
   right: 0;
   margin: 0 0 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 #portfolio .portfolio-item .portfolio-link,
@@ -257,47 +260,20 @@ header.masthead .intro-text .intro-heading {
   max-width: 400px;
   margin: 0 auto;
   cursor: pointer;
+  height: 300px;
+  overflow: hidden;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover,
-#conferences .portfolio-item .portfolio-link .portfolio-hover {
-  position: absolute;
+#portfolio .portfolio-item .portfolio-link img,
+#conferences .portfolio-item .portfolio-link img {
   width: 100%;
   height: 100%;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  opacity: 0;
-  background: #428BCAaa;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  background-color: #f5f5f5;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover,
-#conferences .portfolio-item .portfolio-link .portfolio-hover:hover {
-  opacity: 1;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content,
-#conferences .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  height: 20px;
-  margin-top: -12px;
-  text-align: center;
-  color: white;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i,
-#conferences .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-  margin-top: -12px;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4,
-#conferences .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#conferences .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-  margin: 0;
-}
 
 #portfolio .portfolio-item .portfolio-caption,
 #conferences .portfolio-item .portfolio-caption {
