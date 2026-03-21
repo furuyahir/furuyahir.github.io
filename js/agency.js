@@ -43,7 +43,7 @@
 
   // The code will keep loading the url into iframe until the doc loads successfully.
 
-    var URL = "https://docs.google.com/viewer?srcid=1dd3x5pxIRdAJuSJrTsdUzbROFiPky61E&pid=explorer&efh=false&a=v&chrome=false&embedded=true";
+    var URL = "https://drive.google.com/file/d/1dd3x5pxIRdAJuSJrTsdUzbROFiPky61E/preview";
     var count = 0;
         var iframe = ` <iframe id = "myIframe" src = "${URL}" width="100%" height="300px" frameborder = "0"></iframe>`;
             
