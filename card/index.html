@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Hiroshi Furuya contact card">
+  <meta name="author" content="Hiroshi Furuya">
+  <title>Contact Card | Hiroshi Furuya</title>
+  <link rel="canonical" href="https://hfuruya.com/card/">
+  <meta property="og:url" content="https://hfuruya.com/card/">
+  <meta property="og:title" content="Contact Card | Hiroshi Furuya">
+  <meta property="og:description" content="Connect with Hiroshi Furuya.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background: linear-gradient(160deg, #0a0a0a 0%, #1f1f1f 100%);
+      color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .contact-card {
+      width: 100%;
+      max-width: 540px;
+      border-radius: 14px;
+      background: #151515;
+      border: 1px solid #2f2f2f;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+    }
+
+    .card-header {
+      background: #111;
+      border-bottom: 1px solid #2f2f2f;
+      padding: 26px 26px 18px;
+    }
+
+    .card-header h1 {
+      font-size: 1.6rem;
+      margin-bottom: 6px;
+    }
+
+    .subline {
+      color: #b8b8b8;
+      margin-bottom: 0;
+      line-height: 1.45;
+    }
+
+    .card-body {
+      padding: 24px 26px 26px;
+    }
+
+    .line-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      color: #e8e8e8;
+      word-break: break-word;
+    }
+
+    .line-item i {
+      width: 22px;
+      color: #d3d3d3;
+      margin-right: 10px;
+      text-align: center;
+    }
+
+    .line-item a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .actions {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-gap: 10px;
+    }
+
+    .btn-action {
+      font-weight: 600;
+      border-radius: 8px;
+      padding: 11px 12px;
+    }
+
+    .btn-primary {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
+
+    .btn-outline-light {
+      border-color: #8d8d8d;
+      color: #f2f2f2;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #2a2a2a;
+      border-color: #b6b6b6;
+      color: #fff;
+    }
+
+    .hint {
+      margin-top: 14px;
+      margin-bottom: 0;
+      color: #a7a7a7;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      .actions {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="contact-card" aria-label="Contact card">
+    <header class="card-header">
+      <h1>Hiroshi Furuya</h1>
+      <p class="subline">Ph.D. Student and Trustees Doctoral Fellow at UCF</p>
+    </header>
+
+    <section class="card-body">
+      <div class="line-item">
+        <i class="fas fa-globe"></i>
+        <a href="https://www.hfuruya.com" target="_blank" rel="noopener noreferrer">hfuruya.com</a>
+      </div>
+      <div class="line-item">
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/hfuruya/" target="_blank" rel="noopener noreferrer">linkedin.com/in/hfuruya</a>
+      </div>
+      <div class="line-item">
+        <i class="fas fa-envelope"></i>
+        <script type="text/javascript" language="javascript">
+          // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+          // Random encryption key feature coded by Andrew Moulden
+          // This code is freeware provided these four comment lines remain intact
+          // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+          {
+            coded = "Us3DdUs@UKQ3Q8X.RDY"
+            key = "1N4pPRdA0k7FebXm8IT2uCorLnWOVJiEhjYztflQ9D3MxwqHcsgUvZ6BKaGyS5"
+            shift = coded.length
+            link = ""
+            for (i = 0; i < coded.length; i++) {
+              if (key.indexOf(coded.charAt(i)) == -1) {
+                ltr = coded.charAt(i)
+                link += (ltr)
+              }
+              else {
+                ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length
+                link += (key.charAt(ltr))
+              }
+            }
+            document.write("<a href='mailto:" + link + "'>" + link + "</a>")
+          }
+        //-->
+        </script><noscript>Sorry, you need Javascript on to email me.</noscript>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-primary btn-action" href="contact.vcf" download>
+          <i class="fas fa-address-card"></i> Save Contact
+        </a>
+        <a class="btn btn-outline-light btn-action" href="../index.html">
+          <i class="fas fa-arrow-left"></i> Back to Site
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+

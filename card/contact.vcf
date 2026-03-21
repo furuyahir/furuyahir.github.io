@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Furuya;Hiroshi;;;
+FN:Hiroshi Furuya
+TITLE:Ph.D. Student and Trustees Doctoral Fellow
+ORG:University of Central Florida
+EMAIL;TYPE=INTERNET:your.email@example.com
+TEL;TYPE=CELL:+1-000-000-0000
+URL:https://furuyahir.github.io/
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/hfuruya/
+NOTE:Update this contact.vcf file with your preferred email and phone number.
+END:VCARD
